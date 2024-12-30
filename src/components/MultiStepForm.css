@@ -1,0 +1,81 @@
+:root {
+     --Marine-blue: hsl(213, 96%, 18%);
+     --Purplish-blue: hsl(243, 100%, 62%);
+     --Pastel-blue: hsl(228, 100%, 84%);
+     --Light-blue: hsl(206, 94%, 87%);
+     --Strawberry-red: hsl(354, 84%, 57%);
+     --Cool-gray: hsl(231, 11%, 63%);
+     --Light-gray: hsl(229, 24%, 87%);
+     --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+     --White: hsl(0, 0%, 100%);
+}
+
+.form-container{
+     display:flex;
+     width:900px;
+     height: 550px;
+     background-color: var(--White);
+     border-radius: 12px;
+     padding:12px;
+     
+}
+
+.form-content{
+     padding-top: 3rem;
+     padding-left: 5rem;
+     padding-right: 3.2rem;
+}
+
+
+/* ----------------MEDIA QUERIES---------------- */
+@media(max-width: 900px){
+     .form-container{
+          width:600px;
+          height:400px;
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          
+          
+          
+     }
+
+     .form-content{
+          position: relative;
+          top:-30%;
+          padding:0;
+         
+     }
+}
+
+@media(max-width:600px){
+     .form-container{
+          width:400px;
+          height:500px;
+          
+     }
+
+     .form-content{
+          position: relative;
+          top:-15%;
+          padding:0;
+         
+     }
+}
+
+@media(max-width:400px){
+     .form-container{
+          width:350px;
+          height:500px;
+          
+     }
+}
+
+@media(max-width:350px){
+     .form-container{
+          width:320px;
+          height:500px;
+          
+     }
+}

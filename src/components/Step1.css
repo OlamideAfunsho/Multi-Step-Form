@@ -1,0 +1,132 @@
+:root {
+     --Marine-blue: hsl(213, 96%, 18%);
+     --Purplish-blue: hsl(243, 100%, 62%);
+     --Pastel-blue: hsl(228, 100%, 84%);
+     --Light-blue: hsl(206, 94%, 87%);
+     --Strawberry-red: hsl(354, 84%, 57%);
+     --Cool-gray: hsl(231, 11%, 63%);
+     --Light-gray: hsl(229, 24%, 87%);
+     --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+     --White: hsl(0, 0%, 100%);
+}
+
+.header{
+     color:var(--Marine-blue);
+     font-size: 30px;
+}
+.desc{
+     color:var(--Cool-gray);
+     font-size: 15px;
+     margin-top: 10px;
+}
+
+
+.error-message {
+     color: red;
+     font-size: 12px;
+     text-align: right;
+     margin-top: -12px;
+   }
+   
+   .error-input {
+     border: 1px solid var(--Strawberry-red);
+     outline: none;
+   }
+
+
+
+form{
+     margin-top: 2rem;
+}
+label{
+     color:var(--Marine-blue);
+     font-size: 14px;
+     font-weight: 500;
+}
+input{
+     width:100%;
+     height:40px;
+     border:1px solid var(--Light-gray);
+     border-radius: 10px;
+     padding: 0 10px;
+     margin-top: 8px;
+     margin-bottom: 20px;
+     font-size: 16px;
+     color:var(--Marine-blue);
+     font-family: 'Ubuntu';
+     font-weight: 500;
+}
+input:hover{
+     border:2px solid var(--Marine-blue);
+}
+::-webkit-input-placeholder{
+     color:var(--Cool-gray);
+     font-family: 'Ubuntu';
+     font-weight: 400;
+}
+::-moz-placeholder{
+     color:var(--Cool-gray);
+     font-family: 'Ubuntu';
+     font-weight: 400;
+}
+:-ms-input-placeholder{
+     color:var(--Cool-gray);
+     font-family: 'Ubuntu';
+     font-weight: 400;
+}
+::-ms-input-placeholder{
+     color:var(--Cool-gray);
+     font-family: 'Ubuntu';
+     font-weight: 400;
+}
+::placeholder{
+     color:var(--Cool-gray);
+     font-family: 'Ubuntu';
+     font-weight: 400;
+}
+
+
+
+.next-button{
+     float:right;
+     color:var(--White);
+     background-color: var(--Marine-blue);
+     padding:12px 18px;
+     border:none;
+     border-radius: 8px;
+     margin-top: 20px;
+     transition: all ease 0.1s;
+}
+.next-button:hover{
+     cursor: pointer;
+     opacity: 0.8;
+}
+
+
+
+
+
+/* ----------------MEDIA QUERIES---------------- */
+@media(max-width:900px){
+     .next-button{
+          margin-top: 40px;
+     }
+}
+
+@media(max-width:600px){
+     .con{
+          margin-left:1rem;
+          margin-right:1rem;
+     }
+}
+
+@media(max-width:400px){
+     .desc{
+        
+          font-size: 14px;
+          margin-top: 10px;
+          letter-spacing:1px;
+          line-height:18px;
+     }
+}

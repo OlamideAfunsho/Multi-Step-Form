@@ -1,0 +1,212 @@
+:root {
+     --Marine-blue: hsl(213, 96%, 18%);
+     --Purplish-blue: hsl(243, 100%, 62%);
+     --Pastel-blue: hsl(228, 100%, 84%);
+     --Light-blue: hsl(206, 94%, 87%);
+     --Strawberry-red: hsl(354, 84%, 57%);
+     --Cool-gray: hsl(231, 11%, 63%);
+     --Light-gray: hsl(229, 24%, 87%);
+     --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+     --White: hsl(0, 0%, 100%);
+}
+
+.container {
+     margin-top: 30px;
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: row;
+}
+
+.column {
+     width: 120px;
+     min-height: 130px;
+     border: 1px solid var(--Light-gray);
+     border-radius: 5px;
+     padding-left: 15px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     margin-right: 20px;
+     transition: all ease 0.1s;
+}
+
+.column-header {
+     font-size: 15px;
+     font-weight: 500;
+     color: var(--Marine-blue);
+     
+}
+
+.column-price {
+     color: var(--Cool-gray);
+     font-size: 12px;
+     font-weight: 400;
+}
+
+img {
+     width: 30px;
+     height: 30px;
+     margin-bottom: 30px;
+}
+
+.free-text{
+     font-size: 12px;
+     color:var(--Marine-blue);
+     margin-top: 5px;
+     
+     letter-spacing: -1px;
+     font-weight: 500;
+}
+
+.column:hover {
+     border-color: var(--Purplish-blue);
+     cursor: pointer;
+}
+
+.column.active {
+     border-color: var(--Purplish-blue);
+     background-color: var(--Magnolia);
+}
+
+.back-button {
+     color:var(--Cool-gray);
+     background-color: var(--White);
+     border: none;
+     font-weight: 600;
+     padding: 12px 0;
+     transition: all ease 0.1s;
+}
+
+.back-button:hover {
+     color: var(--Marine-blue);
+     cursor: pointer;
+}
+
+.next-button-2 {
+     float: right;
+     color: var(--White);
+     background-color: var(--Marine-blue);
+     padding: 12px 18px;
+     border: none;
+     border-radius: 8px;
+     transition: all ease 0.1s;
+}
+
+.next-button-2:hover {
+     cursor: pointer;
+     opacity: 0.8;
+}
+
+/* Toggle Switch */
+.toggle {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1rem;
+     margin: 20px 0 70px 0;
+     padding: 12px 0px;
+     background-color: var(--Alabaster);
+     border-radius: 8px;
+ }
+ 
+ .toggle-switch {
+     width: 50px;
+     height: 25px;
+     background-color: var(--Marine-blue);
+     border-radius: 25px;
+     position: relative;
+     cursor: pointer;
+     transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .toggle-circle {
+     width: 20px;
+     height: 20px;
+     background-color: var(--White);
+     border-radius: 50%;
+     position: absolute;
+     top: 50%;
+     left: 3px;
+     transform: translateY(-50%);
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ .toggle-circle.yearly {
+     left: 27px;
+ }
+ 
+ /* Text beside the toggle switch */
+ .toggle span {
+     font-size: 14px;
+     font-weight: 500;
+     color: var(--Cool-gray);
+     letter-spacing: -1px;
+     transition: color 0.3s ease-in-out;
+ }
+ 
+ .toggle span.active {
+     color: var(--Marine-blue);
+ }
+ 
+
+
+
+
+ /* ----------------MEDIA QUERIES---------------- */
+@media(max-width:900px){
+     .next-button-2{
+          margin-top: 30px;
+     }
+     .back-button{
+          background-color:inherit;
+          margin-top: 30px;
+          
+     }
+}
+
+@media(max-width:600px){
+     .container{
+          flex-direction:column;
+     }
+     .column{
+          display:flex;
+          flex-direction: row;
+          align-items:center;
+          min-height:50px;
+          width:100%;
+          margin-bottom:10px;
+     }
+     img{
+          margin-bottom:0;
+          margin-right:20px;
+     }
+     .free-text{
+          margin-left:50px;
+     }
+
+     .toggle{
+          margin-bottom:0px;
+     }
+
+     .next-button-2{
+          margin-top: 20px;
+     }
+     .back-button{
+          margin-top: 20px;
+          
+     }
+}
+
+@media(max-width:400px){
+     .container{
+          margin-top:20px;
+          margin-bottom:0px;
+     }
+     .step2-container{
+          padding-left:1rem;
+          padding-right:1rem;
+     }
+     .toggle{
+          margin-top:10px;
+     }
+}

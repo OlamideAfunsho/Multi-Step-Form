@@ -1,0 +1,147 @@
+:root {
+     --Marine-blue: hsl(213, 96%, 18%);
+     --Purplish-blue: hsl(243, 100%, 62%);
+     --Pastel-blue: hsl(228, 100%, 84%);
+     --Light-blue: hsl(206, 94%, 87%);
+     --Strawberry-red: hsl(354, 84%, 57%);
+     --Cool-gray: hsl(231, 11%, 63%);
+     --Light-gray: hsl(229, 24%, 87%);
+     --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+     --White: hsl(0, 0%, 100%);
+}
+
+
+.checkbox-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cbox-col {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 420px;
+  border: 1px solid var(--Light-gray);
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  transition: all ease 0.1s;
+  position: relative;
+  cursor: pointer;
+}
+
+.cbox-col:hover {
+  border-color: var(--Purplish-blue);
+}
+
+.cbox-col.active {
+  border-color: var(--Purplish-blue);
+  background-color: var(--Magnolia);
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  pointer-events: none; /* Prevent clicks from interfering with column click */
+}
+
+.service {
+  margin-left: 20px;
+}
+
+.service h4 {
+  color: var(--Marine-blue);
+}
+
+.service p {
+  color: var(--Cool-gray);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.price {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: var(--Purplish-blue);
+  font-weight: 400;
+}
+
+.next-button-3 {
+  float: right;
+  color: var(--White);
+  background-color: var(--Marine-blue);
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  transition: all ease 0.1s;
+}
+
+.next-button-3:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+
+/* ----------------MEDIA QUERIES---------------- */
+@media(max-width:900px){
+  .next-button-3{
+       margin-top: 30px;
+  }
+
+}
+
+@media(max-width:600px){
+  .cbox-col{
+    width:100%;
+  }
+
+  .btn-3{
+    margin-top:50px;
+  }
+  .next-button-3{
+    margin-top: 50px;
+}
+}
+
+@media(max-width:400px){
+  .step3-container{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.checkbox-container{
+  margin-bottom:10px;
+}
+
+.service p{
+  font-size:12px;
+}
+}
+
+@media(max-width:350px){
+  .checkbox-container{
+    margin-top:20px;
+    margin-bottom:15px;
+    
+  }
+  .cbox-col{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .service{
+    margin-left:10px;
+  }
+  .service h4{
+    font-size:14px;
+  }
+  .price{
+    right:10px;
+  }
+}
